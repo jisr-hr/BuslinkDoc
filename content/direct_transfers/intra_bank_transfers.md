@@ -18,19 +18,10 @@ memo                              | Memorization of the transaction which will r
 
 ## Headers
 ```powershell
-X-Frame-Options: SAMEORIGIN
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-Permitted-Cross-Domain-Policies: none
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Type: application/json; charset=utf-8
-ETag: W/"c356a3ebd4d3ba91a885300d0601b0c4"
-Cache-Control: max-age=0, private, must-revalidate
-Set-Cookie: _buslnk_session=MdA8c86%2FAvx0F4q5JNEVV8LeoaBxCAW0zzA2327YXsQmIfk48INjqaCL4v71SZScUB77N0H9TpLecnIQ3ZaSLVDoiw0nCPMVCTG344xCcqDx5dsQwHBaIGBOQRmBXYLn1x9QXeidenA2CZ%2BE36FhBWpYbng73vaptBErYQOpL4Xyr8UzO7rl--MoB0%2FdgS2v9j18PK--5HWGMQzsbGRoBS%2FBvDjfgQ%3D%3D; path=/; HttpOnly
-X-Request-Id: a90ba369-e96c-42f5-a9c6-3b07fa35ecd0
-X-Runtime: 0.011196
-Content-Length: 314
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NjU4NDM5My1jODM1LTQ4N2MtOTI3MS1mMmVkOWZiZDJhYTAiLCJzdWIiOiI5Iiwic2NwIjoiYWNjb3VudCIsImF1ZCI6bnVsbCwiaWF0IjoxNTkwOTE5MDk4LCJleHAiOjE1OTA5MTkzOTh9.5ibcQqGhu-_Jdn7KObfPY_0H3wLh3GXTVfMAceJO98w
+Content-Type: application/json
+Host: example.org
+Cookie:
 ```
 ## Example Request
 
