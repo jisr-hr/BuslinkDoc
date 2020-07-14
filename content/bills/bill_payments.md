@@ -1,20 +1,29 @@
 ---
-title: "Mobile Bills"
+title: "Bill Payments"
 metaTitle: "Syntax Highlighting is the meta title tag for this page"
 metaDescription: "This is the meta description for this page"
 ---
 
-Mobile Bill Payment
+Bill Payments
 
 ## EndPoint
 **POST** : `/api/v1/bill_payments.json`
 
 Name                                   | Description                                 | Required/Optional
 -------------------------------------- | ------------------------------------------- | ------------------------
-billing_acct | Billing account that supposed to be paid      | Required
-biller_name | Send `mobily` in this tag      | Required
+biller_name | Biller identifier Like (stc, sec, zain and mobily)| Required
+amount | The amount that needs to be paid by the beneficiary      | Required
+bill_number | The bill number that supposed to be paid      | Required
+due_date | The due date of the payment in the format YYYY-MM-DD     | Required
+due_date | The processing date of the payment in the format YYYY-MM-DD      | Required
+customer_mobile_number | The customer mobile number      | Optional
+account_number | The account Number      | Optional
 
-
+## Supported bills
+- stc
+- sec
+- zain
+- mobily
 
 ## Headers
 ```powershell
@@ -31,7 +40,7 @@ curl --location --request POST 'integrator.clicksandbox.com/api/v1/bill_payments
 --form 'customer_mobile_number=0506966507' \
 --form 'processing_date=2019-09-09' \
 --form 'due_date=2025-10-14' \
---form 'biller_name=mobily' \
+--form 'biller_name=sec' \
 --form 'amount=100' \
 --form 'bill_account=12232019000000017'
 ```
