@@ -1,45 +1,29 @@
-# gatsby-gitbook-starter
-
-Kick off your project with this starter to create a powerful/flexible docs/tutorial web apps.
-
-![gatsby-gitbook-starter](https://graphql-engine-cdn.hasura.io/learn-hasura/gatsby-gitbook-starter/assets/documentation_app_blog.png)
-
-## Motivation
-
-We wanted to create a [GraphQL tutorial](https://learn.hasura.io) series. The content would be written by developers for various languages/frameworks and what better than writing it in Markdown! And since this is a tutorial series we also needed rich embeds, syntax highlighting and more customisations.
-
-We also wanted to serve these tutorials in sub paths of [learn.hasura.io](https://learn.hasura.io). To serve all these requirements, we decided to use Gatsby + MDX (Markdown + JSX) to extend markdown and used a neat consistent theme like the one at [GitBook](https://www.gitbook.com) and deployed as docker containers.
+# Buslink Documentation
 
 ## 🔥 Features
-- Write using Markdown / [MDX](https://github.com/mdx-js/mdx)
-- GitBook style theme
-- Syntax Highlighting using Prism [`Bonus`: Code diff highlighting]
-- Search Integration with Algolia
-- Progressive Web App, Works Offline
-- Google Analytics Integration
-- Automatically generated sidebar navigation, table of contents, previous/next
-- Dark Mode toggle
-- Edit on Github
-- Fully customisable
-- Rich embeds and live code editor using MDX
-- Easy deployment: Deploy on Netlify / Now.sh / Docker
+- Bill Inquiry
+- Bill Payments
+- Customer Accounts Transfers
+- InterBank Transfers
+- IntraBank Transfers
+- Payroll Process
+- Virtual Accounts Management
 
 ## 🔗 Live Demo
 
-Here's a [live demo](https://learn.hasura.io/graphql/react)
+Here's a [live demo](https://app.netlify.com/sites/buslnkdocs)
 
 ## 🚀 Quickstart
 
 Get started by running the following commands:
 
 ```
-$ git clone git@github.com:hasura/gatsby-gitbook-starter.git
-$ cd gatsby-gitbook-starter
+$ git clone git@github.com:jisr-hr/BuslinkDoc.git
+$ cd BuslinkDoc
 $ npm install
 $ npm start
 ```
 
-Visit `http://localhost:8000/` to view the app.
 
 ## 🔧 Configure
 
@@ -74,73 +58,8 @@ Open `config.js` for templating variables. Broadly configuration is available fo
 
 - For sub nesting in left sidebar, create a folder with the same name as the top level `.md` filename and the sub navigation is auto-generated. The sub navigation is alphabetically ordered.
 
-### Algolia Configuration
-
-To setup Algolia, go to `config.js` and update the `search` object to look like the one below:
-
-```...,
-	"search": {
-		"enabled": true,
-		"indexName": "MY_INDEX_NAME",
-		"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
-		"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-		"algoliaAdminKey": process.env.ALGOLIA_ADMIN_KEY
-	},
-```
-
-Values for Algolia App ID, Search Key, and Admin Key can be obtained from Algolia Dashboard with the right set of permissions. Replace `MY_INDEX_NAME` with the Algolia Index name of your choice. To build the Algolia index, you need to run `npm run build` which will do a gatsby build along with content indexing in Algolia.
-
-### Progressive Web App, Offline
-
-To enable PWA, go to `config.js` and update the `pwa` object to look like the one below:
-
-```
-   "pwa": {
-        "enabled": false, // disabling this will also remove the existing service worker.
-        "manifest": {
-            "name": "Gatsby Gitbook Starter",
-            "short_name": "GitbookStarter",
-            "start_url": "/",
-            "background_color": "#6b37bf",
-            "theme_color": "#6b37bf",
-            "display": "standalone",
-            "crossOrigin": "use-credentials",
-            icons: [
-                {
-                    src: "src/pwa-512.png",
-                    sizes: `512x512`,
-                    type: `image/png`,
-                },
-            ],
-        },
-    }
-```
-
-## Live Code Editor
-
-To render react components for live editing, add the `react-live=true` to the code section. For example:
-
-```javascript react-live=true
-<button>Edit my text</button>
-```
-
-In the above code, just add `javascript react-live=true` after the triple quote ``` to start rendering react components that can be edited by users.
-
-## 🤖 SEO friendly
-
-This is a static site and comes with all the SEO benefits. Configure meta tags like title and description for each markdown file using MDX Frontmatter
-
-```markdown
----
-title: "Title of the page"
-metaTitle: "Meta Title Tag for this page"
-metaDescription: "Meta Description Tag for this page"
----
-```
-
-Canonical URLs are generated automatically.
 
 ## ☁️ Deploy
+Deployed to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hasura/gatsby-gitbook-starter)
-
+Inspired by [gatsby-gitbook-starter](https://github.com/hasura/gatsby-gitbook-starter)
