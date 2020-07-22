@@ -1,7 +1,7 @@
 ---
 title: "Creation"
 metaTitle: "Virtual Accounts Management"
-metaDescription: "This is the meta description for this page"
+metaDescription: "Virtual Accounts Management"
 ---
 
 Creation
