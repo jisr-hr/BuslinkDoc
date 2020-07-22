@@ -11,7 +11,8 @@ Upload Payroll File
 
 Name                                   | Description                                 | Required/Optional
 -------------------------------------- | ------------------------------------------- | ------------------------
-file | The file for the payroll process to be executed      | Required
+id | The id for the payroll process for which file to be requested      | Required
+file_type | Type of the file (result, pval) that needs to be downloaded      | Optional
 
 ## File Structure
 
@@ -26,9 +27,9 @@ Cookie:
 ## Example Request
 
 ```powershell
-curl --location --request POST 'localhost:3001/api/v1/payroll_processes.json' \
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTZlNTk0NC01OWZmLTRkNjItOTQ4Ni0yMzgxODE4ZTkzMzUiLCJzdWIiOiI0Iiwic2NwIjoiYWNjb3VudCIsImF1ZCI6bnVsbCwiaWF0IjoxNTk1MjUwNjgyLCJleHAWEEDF1OTUyNTA5ODJ9.W_n4Iks62McaYt1KNhBHxkopcq2eGmivtVoVAosTvOk' \
---form 'file=@/Path/to/file/filename.csv'
+curl --location --request GET 'localhost:3001/api/v1/payroll_processes/PAX2004290040482.json?file_type=result' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTZlNTk0NC01OWZmLTRkNjItOTQ4Ni0yMzgxODE4ZTkzMzUiLCJzdWIiOiI0Iiwic2NwIjoiYWNjb3VudCIsImF1ZCI6bnVsbCwiaWF0IjoxNTk1MjUwNjgyLCJleHAiOjE1OTUyNTA5ODJ9.W_n4Iks62McaYt1KNhBHxkopcq2eGmivtVoVAosTvOk'
 ```
 
 --------------------------------------------------------------------------------
@@ -37,36 +38,32 @@ curl --location --request POST 'localhost:3001/api/v1/payroll_processes.json' \
 
 Status Code - 201 Created
 
-```json
-{
-  "request_id"=>"jisr53E2AEFCA9961536B85E5E254EAA7A65",
-  "description"=>"Successful operation",
-  "body"=>{
-    "desc"=>{},
-    "file_id"=>"PAX1908290032054"
-  },
-  "success"=>true,
-  "file_upload"=>{
-    "request_id"=>"jisr53E2AEFCA9961536B85E5E254EAA7A65",
-    "sub_directory_path"=>"1586021799_53E2AEFC"
-  }
-}
+```csv
+Payroll File Transactions Validation Result
+File ID: PAX1908290032054
+File Description:
+CIF: 13262
+Number Of Records: 1
+Salary Transfer Date: 2019-09-28
+Fund Date: 2019-10-05
+Total Amount: 10
+Account Number: 68200013262000
+Header Errors Description:
+
+Line number,Original line,Error Description
+2,"1,1,1,علي العمري,68200012963000,No,INMA,SA,10,SAR,1,/Payroll/,BANK ACCOUNT,,,,,,,,,,,,,1812678017","Successful Operation",
 ```
 
 --------------------------------------------------------------------------------
 
 ## Expected Errors
-Status Code - 422 Unprocessable Entity
+Status Code - 404 Not Found
 
 ```json
 {
   "request_id"=>"jisr95DA29857901725ECB4E13CE26AA0E0F",
-  "description"=>"Failure operation(00)",
+  "description"=>"Failure operation(404)",
   "body"=>nil,
-  "success"=>false,
-  "file_upload"=>{
-    "request_id"=>"jisr95DA29857901725ECB4E13CE26AA0E0F",
-    "sub_directory_path"=>"1586021799_95DA2985"
-  }
+  "success"=>false
 }
 ```
