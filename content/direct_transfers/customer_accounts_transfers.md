@@ -1,7 +1,7 @@
 ---
 title: "Customer Accounts Transfers"
-metaTitle: "Syntax Highlighting is the meta title tag for this page"
-metaDescription: "This is the meta description for this page"
+metaTitle: "Direct transfers"
+metaDescription: "Direct transfers"
 ---
 
 Customer Accounts Transfers API
