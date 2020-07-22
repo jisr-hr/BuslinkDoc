@@ -1,6 +1,6 @@
 ---
 title: "Payroll Process"
-metaTitle: "Syntax Highlighting is the meta title tag for this page"
-metaDescription: "This is the meta description for this page"
+metaTitle: "Payroll Process"
+metaDescription: "Payroll Process"
 ---
 # Work In Progress

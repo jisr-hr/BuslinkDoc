@@ -4,7 +4,7 @@ metaTitle: "Virtual Accounts Management"
 metaDescription: "Virtual Accounts Management"
 ---
 
-Deactivation
+Search
 
 ## EndPoint
 **GET** : `/api/v1/virtual_accounts.json`
