@@ -7,7 +7,7 @@ metaDescription: "Virtual Accounts Management"
 Deactivation
 
 ## EndPoint
-**PUT** : `/api/v1/virtual_accounts/:bill_sequence_number/activate.json`
+**PUT** : `/api/v1/virtual_accounts/:bill_sequence_number/deactivate.json`
 
 Name                                   | Description                                 | Required/Optional
 -------------------------------------- | ------------------------------------------- | ------------------------
@@ -26,9 +26,8 @@ Cookie:
 ## Example Request
 
 ```powershell
-curl --location --request POST 'localhost:3001/api/v1/payroll_processes.json' \
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTZlNTk0NC01OWZmLTRkNjItOTQ4Ni0yMzgxODE4ZTkzMzUiLCJzdWIiOiI0Iiwic2NwIjoiYWNjb3VudCIsImF1ZCI6bnVsbCwiaWF0IjoxNTk1MjUwNjgyLCJleHAWEEDF1OTUyNTA5ODJ9.W_n4Iks62McaYt1KNhBHxkopcq2eGmivtVoVAosTvOk' \
---form 'file=@/Path/to/file/filename.csv'
+curl --location --request PUT 'localhost:3001/api/v1/virtual_accounts/10143278/deactivate.json' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MTZlNTk0NC01OWZmLTRkNjItOTQ4Ni0yMzgxODE4ZTkzMzUiLCJzdWIiOiI0Iiwic2NwIjoiYWNjb3VudCIsImF1ZCI6bnVsbCwiaWF0IjoxNTk1MjUwNjgyLCJleHAiOjE1OTUyNTA5ODJ9.W_n4Iks62McaYt1KNhBHxkopcq2eGmivtVoVAosTvOk'
 ```
 
 --------------------------------------------------------------------------------
