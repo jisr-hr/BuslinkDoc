@@ -1,5 +1,5 @@
 ---
-title: "Fetch Processed File"
+title: "Payroll Process"
 metaTitle: "Syntax Highlighting is the meta title tag for this page"
 metaDescription: "This is the meta description for this page"
 ---
@@ -7,7 +7,7 @@ metaDescription: "This is the meta description for this page"
 Upload Payroll File
 
 ## EndPoint
-**GET** : `/api/v1/payroll_processes/:id.json`
+**POST** : `/api/v1/payroll_processes.json`
 
 Name                                   | Description                                 | Required/Optional
 -------------------------------------- | ------------------------------------------- | ------------------------
