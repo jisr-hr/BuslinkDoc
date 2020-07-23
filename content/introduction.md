@@ -5,11 +5,10 @@ metaDescription: "Buslink service"
 ---
 ## Envs
 
-Environment | API Url                                             | Admin                                        |       Status
+Environment | API Url  
 ----------- | --------------------------------------------------- | -------------------------------------------- | :----------------:
-Test     | <http://integrator.clicksandbox.com/api/v1> | <http://integrator.clicksandbox.com/api/v1> | :white_check_mark:
-Production  | -                                                   | -                                            |        :x:
-
+Test     | <http://integrator.clicksandbox.com/api/v1>
+Production  | -            
 ## Token
 
 ## EndPoint
@@ -24,7 +23,7 @@ account[password] | The password of the account holder      | Required
 ```powershell
 Content-Type: application/json
 Host: example.org
-Cookie: 
+Cookie:
 
 ```
 --------------------------------------------------------------------------------
