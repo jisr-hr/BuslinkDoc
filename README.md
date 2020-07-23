@@ -9,9 +9,9 @@
 - Payroll Process
 - Virtual Accounts Management
 
-## 🔗 Live Demo
+## 🔗 Live
 
-Here's a [live demo](https://app.netlify.com/sites/buslnkdocs)
+Here's a [live site](https://buslnkdocs.netlify.app)
 
 ## 🚀 Quickstart
 
