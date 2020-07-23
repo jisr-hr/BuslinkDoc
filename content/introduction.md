@@ -31,15 +31,23 @@ Cookie:
 ## Example Request
 
 ```powershell
-curl --location --request POST 'integrator.clicksandbox.com/api/v1/intra_bank_transfers.json' \
---header 'Content-Type: application/json' \
---header 'Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMWFjZWM3Mi1iNjM0L*************************6bnVsbCwiaWF0IjoxNTkxNjE3MDYyLCJleHAiOjE1OTE2MTczNjJ9.**************************' \
---data-raw '{
-	"receiver_account_number": "*********************",
-	"amount": 213,
-	"description": "by Jisr",
-	"memo": "Hello, Demo transfered money to SecondDemo"
-}'
+curl -X POST \
+  http://integrator.clicksandbox.com/api/v1/accounts/sign_in.json \
+  -H 'Accept: */*' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Host: integrator.clicksandbox.com' \
+  -H 'Postman-Token: b51b2c0e-fc67-46e7-9c97-8ca15696227f,5a90b915-6646-42c9-8502-811e1bfe8843' \
+  -H 'User-Agent: PostmanRuntime/7.11.0' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'cache-control: no-cache' \
+  -H 'content-length: 307' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -H 'cookie: _payments_integrator_session=NdlEQw%2BHhc6TsZmE89F2ddXNS%2BDkw0JW0GN6UBUlCVdXqbJn8ujdOerZNT%2FCDkZnvhHy9e%2BuUx1jIXRLtAn%2F16L961kcNJ29QWv5l1EQ9Y3SIY2qezqItHC7v5L1MrhhKhPoPucAoni3ndZD58kRt6QC4%2F6ui04YTqlZze0j2V3uVsnpp4mU%2BI87GVQjUvxhFxV%2B%2FA%3D%3D--cfU4DWmJYR2ZJ%2BRk--lp71M6UgMe6A%2FbQN4kui1A%3D%3D; _buslnk_session=KLfZuteGO5LwZa5OBpWhCCixS%2FwrjJJExPIlJXCOyXOaag4tQJwnbFRJhWecLrkFBaWvKtbFlA3hcJBtdDByAYJkquAs%2BGz4WuU7EhvFJnq34B2eeUpN1%2B7Oxha5nV%2BfkfXHLoMM5BONg2zoMk9apWCifWFeNGUri9DU7TrVIS%2FnPy17XEYs--9R66%2FUzfM5C6nPIK--MXsm2%2B0BtK6WM03z7VK%2FMg%3D%3D' \
+  -b '_payments_integrator_session=NdlEQw%2BHhc6TsZmE89F2ddXNS%2BDkw0JW0GN6UBUlCVdXqbJn8ujdOerZNT%2FCDkZnvhHy9e%2BuUx1jIXRLtAn%2F16L961kcNJ29QWv5l1EQ9Y3SIY2qezqItHC7v5L1MrhhKhPoPucAoni3ndZD58kRt6QC4%2F6ui04YTqlZze0j2V3uVsnpp4mU%2BI87GVQjUvxhFxV%2B%2FA%3D%3D--cfU4DWmJYR2ZJ%2BRk--lp71M6UgMe6A%2FbQN4kui1A%3D%3D; _buslnk_session=KLfZuteGO5LwZa5OBpWhCCixS%2FwrjJJExPIlJXCOyXOaag4tQJwnbFRJhWecLrkFBaWvKtbFlA3hcJBtdDByAYJkquAs%2BGz4WuU7EhvFJnq34B2eeUpN1%2B7Oxha5nV%2BfkfXHLoMM5BONg2zoMk9apWCifWFeNGUri9DU7TrVIS%2FnPy17XEYs--9R66%2FUzfM5C6nPIK--MXsm2%2B0BtK6WM03z7VK%2FMg%3D%3D' \
+  -F 'account[email]=demo@buslnk.com' \
+  -F 'account[password]=password'
 ```
 
 --------------------------------------------------------------------------------
@@ -70,7 +78,7 @@ Status Code - 201 Created
 {
     "id"=>13,
     "status"=>"active",
-    "email"=>"kuldeep-13-ceaf44eb90e9@gmail.com",
+    "email"=>"demo@buslnk.com",
     "created_at"=>"2020-05-31T09:58:18.277Z",
     "updated_at"=>"2020-05-31T09:58:18.284Z",
     "admin_user_id"=>nil
