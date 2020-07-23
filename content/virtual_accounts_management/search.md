@@ -25,6 +25,8 @@ max_records | The maximum number of records in the result set      | Optional
 records_offset | The number of records in the result set that needs to be skipped      | Optional
 customer_official_id | This is the official ID of the customer(max length 32)     | Optional
 
+--------------------------------------------------------------------------------
+
 ## Response Fields
 
 - `bill_dtl_status`
@@ -36,6 +38,7 @@ customer_official_id | This is the official ID of the customer(max length 32)   
 <li>[BillUnpaid]: No payments have been applied to the bill</li>
 </ol>
 
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -44,6 +47,8 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell

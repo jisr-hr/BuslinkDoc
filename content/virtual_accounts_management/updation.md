@@ -15,8 +15,7 @@ due_amount | The amount that needs to be paid by the beneficiary      | Required
 due_date | The due date of the payment in the format YYYY-MM-DD      | Required
 bill_sequence_number | The bill sequence number of VA that needs to be updated | Required
 
-## File Structure
-
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -25,6 +24,9 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell
@@ -33,7 +35,6 @@ curl --location --request PUT 'localhost:3001/api/v1/virtual_accounts/10143278' 
 --form 'due_date=2020-01-01' \
 --form '='
 ```
-
 --------------------------------------------------------------------------------
 
 ## Success Response

@@ -13,8 +13,7 @@ Name                                   | Description                            
 -------------------------------------- | ------------------------------------------- | ------------------------
 bill_sequence_number | The bill sequence number of VA that needs to be activated      | Required
 
-## File Structure
-
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -23,6 +22,9 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell

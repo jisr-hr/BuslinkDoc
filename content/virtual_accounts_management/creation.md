@@ -16,8 +16,7 @@ merchant_bill_number | The bill number against which VA needs to be created     
 due_date | The due date of the payment in the format YYYY-MM-DD | Required
 customer_official_id | This is the official ID of the customer(max length 32) | Required
 
-## File Structure
-
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -26,6 +25,8 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell
