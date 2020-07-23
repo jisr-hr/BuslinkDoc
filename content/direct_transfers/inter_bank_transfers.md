@@ -18,6 +18,8 @@ receiver_full_name | Beneficiary's full name   | Required
 description | Description of the transaction which will reflect in the sender's bank statement, max 16 characters | Optional
 memo                              | Memorization of the transaction which will reflect in the receiver's bank statement, max 105 characters              | Optional
 
+--------------------------------------------------------------------------------
+
 ## Headers
 ```powershell
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NjU4NDM5My1jODM1LTQ4N2MtOTI3MS1mMmVkOWZiZDJhYTAiLCJzdWIiOiI5Iiwic2NwIjoiYWNjb3VudCIsImF1ZCI6bnVsbCwiaWF0IjoxNTkwOTE5MDk4LCJleHAiOjE1OTA5MTkzOTh9.5ibcQqGhu-_Jdn7KObfPY_0H3wLh3GXTVfMAceJO98w
@@ -25,6 +27,8 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell
