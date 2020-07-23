@@ -14,8 +14,7 @@ Name                                   | Description                            
 id | The id for the payroll process for which file to be requested      | Required
 file_type | Type of the file (result, pval) that needs to be downloaded      | Optional
 
-## File Structure
-
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -24,6 +23,9 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell
@@ -51,7 +53,7 @@ Account Number: 68200013262000
 Header Errors Description:
 
 Line number,Original line,Error Description
-2,"1,1,1,علي العمري,68200012963000,No,INMA,SA,10,SAR,1,/Payroll/,BANK ACCOUNT,,,,,,,,,,,,,1812678017","Successful Operation",
+2,"1,1,1,علي العمري,6825522222200,No,INMA,SA,10,SAR,1,/Payroll/,BANK ACCOUNT,,,,,,,,,,,,,1812678017","Successful Operation",
 ```
 
 --------------------------------------------------------------------------------

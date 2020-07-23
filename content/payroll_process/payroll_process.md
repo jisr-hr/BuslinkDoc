@@ -13,6 +13,8 @@ Name                                   | Description                            
 -------------------------------------- | ------------------------------------------- | ------------------------
 file | The file for the payroll process to be executed      | Required
 
+--------------------------------------------------------------------------------
+
 ## File Structure
 
 ![File Structure Sample](./file_structure_sample.png)
@@ -23,6 +25,9 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell
