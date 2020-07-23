@@ -14,11 +14,17 @@ Name                                   | Description                            
 biller_name | Biller identifier Like (stc, sec, zain and mobily)| Required
 billing_acct | Billing account that supposed to be paid      | Required
 
+--------------------------------------------------------------------------------
+
 ## Supported bills
-- stc
-- sec
-- zain
-- mobily
+<ol>
+<li>stc</li>
+<li>sec</li>
+<li>zain</li>
+<li>mobily</li>
+</ol>
+
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -27,6 +33,9 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell

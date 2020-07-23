@@ -19,11 +19,16 @@ due_date | The processing date of the payment in the format YYYY-MM-DD      | Re
 customer_mobile_number | The customer mobile number      | Optional
 account_number | The account Number      | Optional
 
+--------------------------------------------------------------------------------
+
 ## Supported bills
-- stc
-- sec
-- zain
-- mobily
+<ol>
+<li>stc</li>
+<li>sec</li>
+<li>zain</li>
+<li>mobily</li>
+</ol>
+--------------------------------------------------------------------------------
 
 ## Headers
 ```powershell
@@ -32,6 +37,8 @@ Content-Type: application/json
 Host: example.org
 Cookie:
 ```
+--------------------------------------------------------------------------------
+
 ## Example Request
 
 ```powershell
